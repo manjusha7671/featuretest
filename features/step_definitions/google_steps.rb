@@ -10,6 +10,7 @@ When(/^I Enter a (.*)$/) do |keyword|
 end
 
 And(/^click search$/) do
+  puts 'hello'
   @browser.input(:class =>"gNO89b").click
 
 end
