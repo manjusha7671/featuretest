@@ -7,3 +7,7 @@ Cucumber::Rake::Task.new(:features) do |t|
 end
 
 task :default => :features
+
+task 'db:migrate' do
+   puts 'Hello for Rake!'
+end
