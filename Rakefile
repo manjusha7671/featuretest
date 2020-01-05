@@ -15,3 +15,7 @@ end
 task  'regression' do
   :features
   end
+
+task :mv do
+  puts 'hello'
+end
