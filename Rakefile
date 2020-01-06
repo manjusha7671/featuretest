@@ -6,7 +6,7 @@ require 'ffi'
 
 
 Cucumber::Rake::Task.new(:non_js) do |t|
-  t.profile = "webrat"
+  t.profile = "dev"
 end
 
 task :default => :features
