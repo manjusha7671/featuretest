@@ -3,9 +3,7 @@ require 'cucumber'
 require 'cucumber/rake/task'
 require 'ffi'
 
-# Cucumber::Rake::Task.new(:features) do |t|
-#   t.profile = 'default'
-# end
+
 
 Cucumber::Rake::Task.new(:non_js) do |t|
   t.profile = "webrat"
@@ -13,6 +11,14 @@ end
 
 task :default => :features
 
-task  'webrat' do
-  :features
+
+
+task :dev do
+  puts 'hiii'
+  cucumberStatement = 'cucumber --require features features/google.feature'
+  sh(cucumberStatement) do |success, _exit_code |
+    @success &= success
+    end
+  puts cucumberStatement
+
 end
