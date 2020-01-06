@@ -4,4 +4,4 @@ require 'data_magic'
 
 World(PageObject::PageFactory)
 
-Selenium::WebDriver::Chrome.path = 'features/chromedriver.exe'
+Selenium::WebDriver::Chrome.path = 'features/chromedriver'
